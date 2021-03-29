@@ -2,7 +2,10 @@
 Credit risk analysis using scikit-learn and imbalanced-learn on sample credit data.
 
 ## Overview
-The purpose of this analysis was to build and evaluate various machine learning models to evaluate individual customer credit risk. The dataset used to train the models was from LendingClub, "a peer-to-peer lending services company." The algorithms used were:
+The purpose of this analysis was to build and evaluate various machine learning models to evaluate individual customer credit risk. The dataset used to train the models was from LendingClub, "a peer-to-peer lending services company." After being cleaned, the dataset consisted of 68,817 entries, and was heavily unbalanced, with only 0.5% of entries being classified as "high-risk."
+![High-Low Risk Split](images/low_high_val_count.png)
+
+The machine learning algorithms used were:
 * RandomOverSampler
 * SMOTE
 * ClusterCentroids
@@ -54,3 +57,4 @@ The following results are presented in ascending levels of performance, based on
     ![Easy Ensemble AdaBoost Classifier Imbalanced Classifications Report](images/eec_imbal_class.png)
 
 ## Summary
+In conclusion, credit-risk is a difficult thing to predict, even for advanced machine learning algorithms. While the **Easy Ensemble AdaBoost Classifier** model had the highest overall accuracy, this was largely due to the fact that the dataset was so radically unbalanced. Even when it's balanced accuracy and average F-score were above 90%, it's F-score for high-risk prediction was no better than 0.16. In the end, I would advise against using any of these algorithms, as it would put creditors as too great of risk being unable to accurately predict who the high-risk clients/debtors would be.
