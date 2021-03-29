@@ -17,30 +17,40 @@ In examining the results we will look at the Balanced Accuracy Score as well as 
 
 The following results are presented in ascending levels of performance, based on their Balanced Accuracy Scores, starting with the worst-performing model and moving to the best.
 
-* **Cluster Centroids Undersampling** gave us the worst results, with an accuracy score of 0.5295. That means that it did little better than 50%, or a 50/50 coin-toss, at predicting high credit risks.
+* **Cluster Centroids Undersampling** gave us the worst results, with an accuracy score of 0.5295. That means that it did little better than 50%, or a 50/50 coin-toss, at accurately predicting credit risks.
     ![Cluster Centroids Undersampling Balanced Accuracy Score](images/ccu_bal_acc.png)
 
     It's F-scores were similarly disappointing, achieving an average of only 0.56 and an F-score for high-risk prediction of only 0.01.
     ![Cluster Centroids Undersampling Imbalanced Classifications Report](images/ccu_imbal_class.png)
 
-* **Combination Sampling**
+* **Combination Sampling** gave us the second-worst results, with an accuracy score of 0.6529. That means that it did little better than 65%, or 2/3rds accuracy at predicting credit risks.
     ![Combination Sampling Balanced Accuracy Score](images/combsamp_bal_acc.png)
+
+    It's F-scores were still disappointing, achieving an average of only 0.72 and an F-score for high-risk prediction of only 0.02.
     ![Combination Sampling Imbalanced Classifications Report](images/combsamp_imbal_class.png)
 
-* **SMOTE Oversampling**
+* **SMOTE Oversampling** gave us the third-worst results, with an accuracy score of 0.662. This is about the same performance we saw from **Combination Sampling**. This means that it did little better than 66%, or 2/3rds accuracy at predicting credit risks.
     ![SMOTE Oversampling Balanced Accuracy Score](images/smote_bal_acc.png)
+
+    It's F-scores showed were also disappointing, achieving only a marginally improved average of 0.80 and another F-score for high-risk prediction of only 0.02.
     ![SMOTE Oversampling Imbalanced Classifications Report](images/smote_imbal_class.png)
 
-* **Naive Random Oversampling**
+* **Naive Random Oversampling** brings us to the midway point in our model performances. The ROS model gave us the third-best results, with an accuracy score of 0.6732. This is still about the same performance we saw from **Combination Sampling** and **SMOTE Oversampling**. This means that it did little better than 67%, or 2/3rds accuracy at predicting credit risks.
     ![Random Oversampling Balanced Accuracy Score](images/ros_bal_acc.png)
+
+    It's F-scores were also worse or on-par with **SMOTE Oversampling**. The ROS model achieved an average of 0.76 and another F-score for high-risk prediction of only 0.02.
     ![Random Oversampling Imbalanced Classifications Report](images/ros_imbal_class.png)
 
-* **Balanced Random Forest Classifier**
+* **Balanced Random Forest Classifier** gave us the second-best results, showing marked improvement with an accuracy score of 0.7615. However, this is still far from perfect. This means that it could only accurately predict about 76%, or 3/4ths of the appropriate levels of credit risks.
     ![Balanced Random Forest Classifier Balanced Accuracy Score](images/brfc_bal_acc.png)
+
+    It's F-scores were where there was most improvement (relatively). The BRFC model achieved an average F-score of 0.92, which is at least in the 90's. However, it's F-score for high-risk prediction was still low, at only 0.06.    
     ![Balanced Random Forest Classifier Imbalanced Classifications Report](images/brfc_imbal_class.png)
 
-* **Easy Ensemble AdaBoost Classifier**
+* **Easy Ensemble AdaBoost Classifier** was the best-performing model, hands-down. It's results were leagues beyond all other models attempted. It gave us an accuracy score of 0.9319. While not perfect, this means that it could accurately predict at a rate greater than 93% of the appropriate levels of credit risks.
     ![Easy Ensemble AdaBoost Classifier Balanced Accuracy Score](images/eec_bal_acc.png)
+
+    It's F-scores were also fairly impressive. The EEC model achieved an average F-score of 0.97. However, while the best performing, it's F-score for high-risk prediction was still low, at only 0.16.      
     ![Easy Ensemble AdaBoost Classifier Imbalanced Classifications Report](images/eec_imbal_class.png)
 
 ## Summary
