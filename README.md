@@ -16,8 +16,8 @@ The models were run and then evaluated for performance and accuracy at predictin
 In examining the results we will look at the Balanced Accuracy Score as well as the Imbalanced Classification Report (ICR) from each model. Of particular interest in the ICR are two figures from the "f1" (F-score) column - the number from the bottom "avg / total" row, as well as the f-score from the "high risk" row, since we're primarily interested in our ability to detect high credit risk individuals.
 
 * Naive Random Oversampling
-    - ![Random Oversampling Balanced Accuracy Score](images/ros_bal_acc.png)
-    - ![Random Oversampling Imbalanced Classifications Report](images/ros_imbal_class.png)
+    * ![Random Oversampling Balanced Accuracy Score](images/ros_bal_acc.png)
+    * ![Random Oversampling Imbalanced Classifications Report](images/ros_imbal_class.png)
 
 * SMOTE Oversampling
 ![SMOTE Oversampling Balanced Accuracy Score](images/smote_bal_acc.png)
