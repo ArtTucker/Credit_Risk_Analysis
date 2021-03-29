@@ -18,10 +18,10 @@ In examining the results we will look at the Balanced Accuracy Score as well as 
 The following results are presented in ascending levels of performance, based on their Balanced Accuracy Scores, starting with the worst-performing model and moving to the best.
 
 * **Cluster Centroids Undersampling** gave us the worst results, with an accuracy score of 0.5295. That means that it did little better than 50%, or a 50/50 coin-toss, at predicting high credit risks.
-![Cluster Centroids Undersampling Balanced Accuracy Score](images/ccu_bal_acc.png)
+    ![Cluster Centroids Undersampling Balanced Accuracy Score](images/ccu_bal_acc.png)
 
-It's F-scores 
-![Cluster Centroids Undersampling Imbalanced Classifications Report](images/ccu_imbal_class.png)
+    It's F-scores were similarly disappointing, achieving an average of only 0.56 and an F-score for high-risk prediction of only 0.01.
+    ![Cluster Centroids Undersampling Imbalanced Classifications Report](images/ccu_imbal_class.png)
 
 * **Combination Sampling**
     ![Combination Sampling Balanced Accuracy Score](images/combsamp_bal_acc.png)
